@@ -34,7 +34,8 @@ deleteSideView();
 }*/
 
 //window.setTimeout(deleteSideView,3000);
-window.setTimeout(function () {
+url=window.location.href;
+if(url.startsWith("https://www.youtube.com")){window.setTimeout(function () {
   homePage=document.querySelector(".style-scope ytd-two-column-browse-results-renderer");
   homePage.remove();
 
@@ -56,3 +57,4 @@ window.setTimeout(function () {
   sideBar=document.querySelector("#secondary");
   sideBar.remove();
 }, 2000);
+}
